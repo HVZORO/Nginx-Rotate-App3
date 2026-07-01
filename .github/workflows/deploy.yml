@@ -21,8 +21,8 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             set -e
-            cd ~/nginx-rotate-app3
-            git pull https://github.com/HVZORO/Nginx-Rotate-App3.git  main
+            git clone https://github.com/HVZORO/Nginx-Rotate-App3.git  main
+            cd main
 
             sudo cp webpages/*.html /var/www/html/
             sudo chown www-data:www-data /var/www/html/*.html

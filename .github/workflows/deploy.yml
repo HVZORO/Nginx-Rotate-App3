@@ -31,7 +31,7 @@ jobs:
 
             sudo ln -sf /var/www/html/index1.html /var/www/html/index.html
 
-            ./start_rotation.sh
+            sudo  ./start_rotation.sh
             sudo nginx -t
             sudo systemctl reload nginx
           EOF

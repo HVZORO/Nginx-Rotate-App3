@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TARGET="/var/www/html/index.html"
-SRC_DIR="/home/harsha_pc/nginx-rotate-app2/webpages"
+SRC_DIR="/home/ubuntu/nginx-rotate-app2/webpages"
 
 PAGES=("index1.html" "index2.html" "index3.html")
 

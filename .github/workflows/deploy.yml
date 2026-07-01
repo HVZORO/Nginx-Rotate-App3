@@ -21,6 +21,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             set -e
+            rm -fr main
             git clone https://github.com/HVZORO/Nginx-Rotate-App3.git  main
             cd main
 
